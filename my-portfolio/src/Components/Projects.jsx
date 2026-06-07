@@ -1,4 +1,5 @@
 import { portfolioData } from "../data/portfolioData";
+import projectLogo from "../assets/logo.png";
 
 export default function Projects() {
   return (
@@ -12,6 +13,15 @@ export default function Projects() {
         <div className="projects-grid">
           {portfolioData.projects.map((project) => (
             <article className="project-card" key={project.title}>
+              <div className="project-image-wrapper">
+                <img
+                  src={project.image || projectLogo}
+                  alt={project.title}
+                  className={`project-image ${project.image ? "project-image-custom" : "project-image-fallback"}`}
+                  style={project.objectFit ? { objectFit: project.objectFit } : {}}
+                />
+              </div>
+
               <div className="project-top">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>

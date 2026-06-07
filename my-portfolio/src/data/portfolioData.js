@@ -1,3 +1,10 @@
+import coffeeBiDashboard from "../assets/coffee_bi_dashboard.png";
+import responseTimeAnalysis from "../assets/response_time_analysis.png";
+import smartCampusHub from "../assets/smart_campus_hub.png";
+import agrolink from "../assets/agrolink.png";
+import wellnest from "../assets/wellnest.png";
+import halomed from "../assets/halomed.png";
+
 export const portfolioData = {
   name: "Ruwinya Karunarathna",
   title: "Data Science Undergraduate",
@@ -85,26 +92,65 @@ export const portfolioData = {
 
   projects: [
     {
-      title: "Personal Portfolio Website",
+      title: "Data Warehouse & Business Intelligence System",
       description:
-        "A responsive portfolio built with React and Vite, featuring smooth navigation, modern UI, and organized sections for skills, projects, and contact.",
-      tags: ["React", "Vite", "CSS"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "An end-to-end business intelligence solution designed around a real-world coffee orders dataset. It features structured data warehouse design, automated ETL pipelines, and multidimensional OLAP cubes. Interactive dashboards provide stakeholders with actionable insights into sales trends, customer behavior, and regional product performance.",
+      tags: ["SQL Server", "SSIS", "SSAS", "SQL", "Excel", "Power BI"],
+      image: coffeeBiDashboard,
+      liveUrl: "https://github.com/ruwinya10/Data-Warehousing-and-Business-Intelligence-Project.git",
+      githubUrl: "https://github.com/ruwinya10/Data-Warehousing-and-Business-Intelligence-Project.git",
     },
     {
-      title: "Task Management App",
+      title: "Service Timeliness Impact on Customer Confidence: A Statistical & Predictive Analysis",
       description:
-        "A full-stack task manager with user authentication, CRUD operations, and a clean dashboard for tracking daily productivity.",
-      tags: ["JavaScript", "Node.js", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A comprehensive statistical study evaluating how service response times influence customer satisfaction in hospitality settings. The analysis applies regression modeling, hypothesis testing, and ANOVA to identify key performance drivers, highlighting the relationship between service timeliness, environmental factors, and customer confidence.",
+      tags: ["R", "Statistical Modelling", "Data Visualization"],
+      image: responseTimeAnalysis,
+      liveUrl: "https://github.com/ruwinya10/Statistical-Modelling-Data-Analysis-Project.git",
+      githubUrl: "https://github.com/ruwinya10/Statistical-Modelling-Data-Analysis-Project.git",
     },
     {
-      title: "E-Commerce UI Prototype",
+      title: "Smart Campus Operations Hub",
       description:
-        "A modern e-commerce frontend with product listings, cart functionality, and mobile-first responsive design.",
-      tags: ["React", "CSS", "REST API"],
+        "A unified platform designed to streamline daily university campus operations. It features conflict-free booking for facilities and assets, automated incident ticketing, real-time user notifications, and secure QR code-based check-ins governed by granular role-based access controls.",
+      tags: ["Spring Boot", "MySQL", "Spring Security", "JWT", "OAuth 2.0", "React"],
+      image: smartCampusHub,
+      liveUrl: "https://github.com/PamodPannigala/-it3030-paf-2026-smart-campus-group_WE_DS_Y3.S1_2.1.git",
+      githubUrl: "https://github.com/PamodPannigala/-it3030-paf-2026-smart-campus-group_WE_DS_Y3.S1_2.1.git",
+    },
+    {
+      title: "AgroLink – Smart Agricultural Trading & Management System",
+      description:
+        "A collaborative platform connecting farmers, buyers, agronomists, and logistics drivers in a single trading ecosystem. The system handles agricultural product trading, order tracking, harvest scheduling, financial tracking, and includes comprehensive administrative monitoring dashboards.",
+      tags: ["MongoDB", "Express.js", "React", "Node.js"],
+      image: agrolink,
+      liveUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
+      githubUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
+    },
+    {
+      title: "WellNest – Daily Habit & Mood Tracker with Hydration Reminders",
+      description:
+        "A mobile wellness application designed to help users establish and maintain healthy daily routines. It features intuitive habit tracking, mood journaling with emoji input, personalized hydration reminders, and home-screen widgets for quick access and tracking.",
+      tags: ["Kotlin", "Android Studio", "SharedPreferences"],
+      image: wellnest,
+      objectFit: "cover",
+      liveUrl: "https://github.com/ruwinya10/Wellness-Tracker-Android-Mobile-Application.git",
+      githubUrl: "https://github.com/ruwinya10/Wellness-Tracker-Android-Mobile-Application.git",
+    },
+    {
+      title: "HaloMed – Online E-Channeling System",
+      description:
+        "A comprehensive digital healthcare platform designed to streamline patient-doctor interactions. It supports online doctor searches, appointment scheduling, lab test bookings, medical report management, and role-based administration portals alongside secure simulated payment processing.",
+      tags: ["HTML", "CSS", "JavaScript", "Java", "MySQL Workbench"],
+      image: halomed,
+      liveUrl: "https://github.com/ruwinya10/Online-E-Channeling-System.git",
+      githubUrl: "https://github.com/ruwinya10/Online-E-Channeling-System.git",
+    },
+    {
+      title: "Trendify – Online Fashion Store & E-Commerce Shopping Platform",
+      description:
+        "A full-featured e-commerce platform offering a seamless online shopping experience. Key capabilities include interactive product browsing, shopping cart workflows, secure checkout, and comprehensive management dashboards for handling inventory, suppliers, and user roles.",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
     },

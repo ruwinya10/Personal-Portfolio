@@ -4,6 +4,7 @@ import smartCampusHub from "../assets/smart_campus_hub.png";
 import agrolink from "../assets/agrolink.png";
 import wellnest from "../assets/wellnest.png";
 import halomed from "../assets/halomed.png";
+import trendify from "../assets/Trendify.png";
 
 export const portfolioData = {
   name: "Ruwinya Karunarathna",
@@ -104,7 +105,7 @@ export const portfolioData = {
       title: "Service Timeliness Impact on Customer Confidence: A Statistical & Predictive Analysis",
       description:
         "A comprehensive statistical study evaluating how service response times influence customer satisfaction in hospitality settings. The analysis applies regression modeling, hypothesis testing, and ANOVA to identify key performance drivers, highlighting the relationship between service timeliness, environmental factors, and customer confidence.",
-      tags: ["R", "Statistical Modelling", "Data Visualization"],
+      tags: ["R", "Statistical Modelling", "Data Visualization", "Predictive Analytics"],
       image: responseTimeAnalysis,
       liveUrl: "https://github.com/ruwinya10/Statistical-Modelling-Data-Analysis-Project.git",
       githubUrl: "https://github.com/ruwinya10/Statistical-Modelling-Data-Analysis-Project.git",
@@ -113,7 +114,7 @@ export const portfolioData = {
       title: "Smart Campus Operations Hub",
       description:
         "A unified platform designed to streamline daily university campus operations. It features conflict-free booking for facilities and assets, automated incident ticketing, real-time user notifications, and secure QR code-based check-ins governed by granular role-based access controls.",
-      tags: ["Spring Boot", "MySQL", "Spring Security", "JWT", "OAuth 2.0", "React"],
+      tags: ["Spring Boot", "MySQL", "Spring Security", "JWT", "OAuth 2.0", "React", "Bootstrap", "REST APIs"],
       image: smartCampusHub,
       liveUrl: "https://github.com/PamodPannigala/-it3030-paf-2026-smart-campus-group_WE_DS_Y3.S1_2.1.git",
       githubUrl: "https://github.com/PamodPannigala/-it3030-paf-2026-smart-campus-group_WE_DS_Y3.S1_2.1.git",
@@ -121,8 +122,8 @@ export const portfolioData = {
     {
       title: "AgroLink – Smart Agricultural Trading & Management System",
       description:
-        "A collaborative platform connecting farmers, buyers, agronomists, and logistics drivers in a single trading ecosystem. The system handles agricultural product trading, order tracking, harvest scheduling, financial tracking, and includes comprehensive administrative monitoring dashboards.",
-      tags: ["MongoDB", "Express.js", "React", "Node.js"],
+        "A collaborative platform connecting farmers, buyers, agronomists, and logistics drivers in a single trading ecosystem. The system handles agricultural product trading, order tracking, harvest scheduling, delivery & financial tracking, and includes comprehensive administrative monitoring dashboards.",
+      tags: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
       image: agrolink,
       liveUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
       githubUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
@@ -151,8 +152,9 @@ export const portfolioData = {
       description:
         "A full-featured e-commerce platform offering a seamless online shopping experience. Key capabilities include interactive product browsing, shopping cart workflows, secure checkout, and comprehensive management dashboards for handling inventory, suppliers, and user roles.",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      liveUrl: "#",
-      githubUrl: "#",
+      image: trendify,
+      liveUrl: "https://github.com/ruwinya10/Online-Fashion-Store-Web-Application.git",
+      githubUrl: "https://github.com/ruwinya10/Online-Fashion-Store-Web-Application.git",
     },
   ],
 

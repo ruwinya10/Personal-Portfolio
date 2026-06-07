@@ -1,46 +1,32 @@
 import { useState } from "react";
 import { portfolioData } from "../data/portfolioData";
-import { EmailIcon, LinkedInIcon } from "./SocialIcons";
+import {
+  EmailOutlineIcon,
+  LinkedInOutlineIcon,
+  LocationOutlineIcon,
+} from "./SocialIcons";
 
 export default function Contact() {
   const [status, setStatus] = useState("idle");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("sending");
 
     const form = e.target;
     const formData = new FormData(form);
+    const name = String(formData.get("name")).trim();
+    const email = String(formData.get("email")).trim();
+    const message = String(formData.get("message")).trim();
 
-    try {
-      const response = await fetch(
-        `https://formsubmit.co/ajax/${portfolioData.email}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            name: formData.get("name"),
-            email: formData.get("email"),
-            message: formData.get("message"),
-            _subject: "New portfolio contact form message",
-            _template: "table",
-            _captcha: "false",
-          }),
-        }
-      );
+    const subject = encodeURIComponent(`Portfolio message from ${name}`);
+    const body = encodeURIComponent(
+      `${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
+    );
 
-      if (response.ok) {
-        setStatus("success");
-        form.reset();
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
+    window.location.href = `mailto:${portfolioData.email}?subject=${subject}&body=${body}`;
+
+    setStatus("opened");
+    form.reset();
   };
 
   return (
@@ -60,32 +46,28 @@ export default function Contact() {
 
             <ul className="contact-list">
               <li className="contact-item">
-                <span className="contact-icon" aria-hidden="true">
-                  <EmailIcon size={22} />
+                <span className="contact-icon-circle" aria-hidden="true">
+                  <EmailOutlineIcon size={24} />
                 </span>
-                <div>
-                  <span className="contact-label">Email</span>
-                  <a href={`mailto:${portfolioData.email}`}>{portfolioData.email}</a>
-                </div>
-              </li>
-              <li>
-                <span className="contact-label">Location</span>
-                <span>{portfolioData.location}</span>
+                <a href={`mailto:${portfolioData.email}`}>{portfolioData.email}</a>
               </li>
               <li className="contact-item">
-                <span className="contact-icon" aria-hidden="true">
-                  <LinkedInIcon size={20} />
+                <span className="contact-icon-circle" aria-hidden="true">
+                  <LinkedInOutlineIcon size={20} />
                 </span>
-                <div>
-                  <span className="contact-label">LinkedIn</span>
-                  <a
-                    href={portfolioData.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {portfolioData.name}
-                  </a>
-                </div>
+                <a
+                  href={portfolioData.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {portfolioData.name}
+                </a>
+              </li>
+              <li className="contact-item">
+                <span className="contact-icon-circle" aria-hidden="true">
+                  <LocationOutlineIcon size={20} />
+                </span>
+                <span className="contact-text">{portfolioData.location}</span>
               </li>
             </ul>
           </div>
@@ -114,21 +96,13 @@ export default function Contact() {
               required
             />
           </label>
-          <button
-            type="submit"
-            className="btn btn-primary"
-            disabled={status === "sending"}
-          >
-            {status === "sending" ? "Sending..." : "Send Message"}
+          <button type="submit" className="btn btn-primary">
+            Send Message
           </button>
-          {status === "success" && (
+          {status === "opened" && (
             <p className="form-feedback form-feedback-success">
-              Message sent! I'll get back to you soon.
-            </p>
-          )}
-          {status === "error" && (
-            <p className="form-feedback form-feedback-error">
-              Something went wrong. Please try again or email me directly.
+              Your email app should open — press Send there to deliver the
+              message from your inbox.
             </p>
           )}
         </form>

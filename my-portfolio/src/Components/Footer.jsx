@@ -28,7 +28,7 @@ export default function Footer() {
             <LinkedInIcon />
           </a>
           <a href={`mailto:${portfolioData.email}`} aria-label="Send email">
-            <EmailIcon />
+            <EmailIcon size={28}/>
           </a>
         </div>
       </div>

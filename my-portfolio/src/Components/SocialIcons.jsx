@@ -42,3 +42,75 @@ export function EmailIcon({ size = 22 }) {
     </svg>
   );
 }
+
+const outlineDefaults = {
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+};
+
+export function EmailOutlineIcon({ size = 32 }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <rect
+        {...outlineDefaults}
+        strokeWidth={2.25}
+        x="2"
+        y="4"
+        width="20"
+        height="16"
+        rx="2"
+      />
+      <path
+        {...outlineDefaults}
+        strokeWidth={2.25}
+        d="m22 7-8.97 6.39a1.94 1.94 0 0 1-2.06 0L2 7"
+      />
+    </svg>
+  );
+}
+
+export function LinkedInOutlineIcon({ size = 20 }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        {...outlineDefaults}
+        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-9h4"
+      />
+      <rect {...outlineDefaults} x="2" y="9" width="4" height="12" />
+      <circle {...outlineDefaults} cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
+
+export function LocationOutlineIcon({ size = 20 }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        {...outlineDefaults}
+        d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"
+      />
+      <circle {...outlineDefaults} cx="12" cy="10" r="3" />
+    </svg>
+  );
+}

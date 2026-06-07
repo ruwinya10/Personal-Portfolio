@@ -362,37 +362,36 @@
   padding: 0;
   margin: 2rem 0 0;
   display: grid;
-  gap: 1.25rem;
-}
-
-.contact-list li {
-  display: grid;
-  gap: 0.25rem;
+  gap: 1.5rem;
 }
 
 .contact-item {
   display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
+  align-items: center;
+  gap: 1rem;
 }
 
-.contact-icon {
+.contact-icon-circle {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 1.75rem;
-  height: 1.75rem;
-  margin-top: 0.1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.14);
   color: var(--accent-light);
 }
 
-.contact-label {
+.contact-item a,
+.contact-text {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.contact-item a:hover {
   color: var(--accent-light);
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
 .contact-form {

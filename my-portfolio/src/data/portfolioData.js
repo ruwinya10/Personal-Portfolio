@@ -30,16 +30,56 @@ export const portfolioData = {
 
   skills: [
     {
-      category: "Languages",
-      items: ["JavaScript", "Python", "Java", "HTML", "CSS", "SQL"],
+      category: "Programming Languages",
+      items: ["R", "Python", "Java", "C++", "C", "Kotlin", "PHP", "JavaScript"],
     },
     {
-      category: "Frameworks & Tools",
-      items: ["React", "Node.js", "Git", "VS Code", "Figma"],
+      category: "Data & Analytics",
+      items: [
+        "Data Warehousing",
+        "Business Intelligence (BI)",
+        "Data Analysis",
+        "Database Administration",
+        "Power BI",
+        "SSAS",
+        "SSIS",
+        "SSRS",
+      ],
     },
     {
-      category: "Concepts",
-      items: ["OOP", "Data Structures", "REST APIs", "Responsive Design", "Agile"],
+      category: "Databases",
+      items: ["MySQL", "SQL", "NoSQL", "MongoDB", "SQL Server"],
+    },
+    {
+      category: "Web & Mobile Development",
+      items: [
+        "Spring Boot",
+        "MERN Stack",
+        "REST APIs",
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "Web Development",
+        "Mobile Application Development",
+        "HTML5",
+        "CSS",
+        "Tailwind CSS",
+      ],
+    },
+    {
+      category: "Tools",
+      items: ["Git", "GitHub", "Postman"],
+    },
+    {
+      category: "Soft Skills",
+      items: [
+        "Problem Solving",
+        "Teamwork",
+        "Communication",
+        "Decision Making",
+        "Presentation Skills",
+        "Adaptability",
+      ],
     },
   ],
 

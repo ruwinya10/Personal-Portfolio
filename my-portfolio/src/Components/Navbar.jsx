@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container navbar-inner">
         <NavLink to="/" className="logo" onClick={closeMenu} aria-label="Go to home">
-          RK<span className="logo-dot">.</span>
+          RK
         </NavLink>
 
         <button

@@ -22,12 +22,6 @@ export default function Contact() {
                 <a href={`mailto:${portfolioData.email}`}>{portfolioData.email}</a>
               </li>
               <li>
-                <span>Phone</span>
-                <a href={`tel:${portfolioData.phone.replace(/\s/g, "")}`}>
-                  {portfolioData.phone}
-                </a>
-              </li>
-              <li>
                 <span>Location</span>
                 <span>{portfolioData.location}</span>
               </li>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { portfolioData } from "../data/portfolioData";
+import profilePhoto from "../assets/profile.png";
 
 export default function Home() {
   return (
@@ -20,20 +21,12 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="social-links">
-            <a href={portfolioData.linkedin} target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href={portfolioData.github} target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </div>
         </div>
 
         <div className="home-visual">
           <div className="avatar-ring">
             <div className="avatar">
-              <span>RK</span>
+              <img src={profilePhoto} alt={portfolioData.name} />
             </div>
           </div>
         </div>

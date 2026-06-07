@@ -1,10 +1,9 @@
 export const portfolioData = {
   name: "Ruwinya Karunarathna",
-  title: "IT Undergraduate",
-  tagline: "Building thoughtful digital experiences with clean code and creative problem-solving.",
-  email: "ruwinya.karunarathna@email.com",
-  phone: "+94 XX XXX XXXX",
-  location: "Sri Lanka",
+  title: "Data Science Undergraduate",
+  tagline: "Turning Data into Insights, Ideas into Solutions.",
+  email: "ruwinyakarunarathna10@gmail.com",
+  location: "Colombe, Sri Lanka",
   linkedin: "https://linkedin.com/in/ruwinya-karunarathna",
   github: "https://github.com/ruwinya-karunarathna",
 

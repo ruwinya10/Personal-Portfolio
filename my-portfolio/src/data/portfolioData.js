@@ -3,7 +3,7 @@ export const portfolioData = {
   title: "Data Science Undergraduate",
   tagline: "Turning Data into Insights, Ideas into Solutions.",
   email: "ruwinyakarunarathna10@gmail.com",
-  location: "Colombe, Sri Lanka",
+  location: "Colombo, Sri Lanka",
   linkedin: "https://linkedin.com/in/ruwinya-karunarathna",
   github: "https://github.com/ruwinya-karunarathna",
 

@@ -9,14 +9,21 @@ export const portfolioData = {
 
   about: {
     intro:
-      "I'm Ruwinya Karunarathna, an IT undergraduate passionate about software development, problem-solving, and creating meaningful technology solutions.",
+      "Currently I'm a 3rd-year undergraduate at Sri Lanka Institute of Technology (SLIIT), pursuing a BSc (Hons) in Information Technology specializing in Data Science.",
     paragraphs: [
-      "I enjoy turning complex problems into simple, elegant solutions. My focus spans web development, programming fundamentals, and continuous learning in emerging technologies.",
-      "I'm actively building projects, expanding my skill set, and looking for opportunities to collaborate, intern, and grow as a developer.",
+      "With a current CGPA of 3.92, I am a highly motivated and disciplined learner with a strong passion for Data Science, Machine Learning, Artificial Intelligence, and Software Engineering.",
+      "Alongside my studies, I have worked on several academic and personal projects that have helped me strengthen my technical skills and apply theoretical knowledge in practical scenarios. I am particularly interested in how intelligent systems and data-driven approaches can be applied to solve real-world problems and improve decision-making.",
     ],
     highlights: [
-      { label: "Education", value: "BSc in Information Technology" },
-      { label: "Focus", value: "Software & Web Development" },
+      {
+        label: "Education",
+        value:
+          "BSc (Hons) in Information Technology — Data Science\nSLIIT, Malabe",
+      },
+      {
+        label: "Focus",
+        value: "Data Science, Machine Learning, AI & Software Engineering",
+      },
       { label: "Status", value: "Open to opportunities" },
     ],
   },

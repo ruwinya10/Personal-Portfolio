@@ -6,14 +6,14 @@ export default function About() {
   return (
     <section className="section page about">
       <div className="container">
-        <div className="section-header">
-          <p className="eyebrow">About Me</p>
-          <h2>Who I Am</h2>
-        </div>
-
         <div className="about-grid">
+          <div className="section-header about-header">
+            <p className="eyebrow">About Me</p>
+            <h2>Who I Am</h2>
+          </div>
+
           <div className="about-text">
-            <p className="about-intro">{about.intro}</p>
+            <p>{about.intro}</p>
             {about.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}

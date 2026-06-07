@@ -150,10 +150,31 @@
 }
 
 /* About */
+.about.page {
+  padding-top: calc(72px + 3rem);
+}
+
 .about-grid {
+  --about-heading-gap: 0.125rem;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
-  gap: 2rem;
+  grid-template-areas:
+    "header highlights"
+    "text highlights";
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.about-header {
+  grid-area: header;
+}
+
+.about-header h2 {
+  margin-top: var(--about-heading-gap);
+}
+
+.about-text {
+  grid-area: text;
 }
 
 .about-text p {
@@ -161,14 +182,11 @@
   margin-top: 0;
 }
 
-.about-intro {
-  color: var(--text) !important;
-  font-size: 1.1rem;
-}
-
 .about-highlights {
+  grid-area: highlights;
   display: grid;
   gap: 1rem;
+  padding-top: calc(0.875rem * 1.6 + var(--about-heading-gap) + 1rem);
 }
 
 .highlight-card {
@@ -190,6 +208,7 @@
 
 .highlight-value {
   font-weight: 600;
+  white-space: pre-line;
 }
 
 /* Skills */

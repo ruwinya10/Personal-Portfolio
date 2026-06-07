@@ -5,6 +5,7 @@ import agrolink from "../assets/agrolink.png";
 import wellnest from "../assets/wellnest.png";
 import halomed from "../assets/halomed.png";
 import trendify from "../assets/Trendify.png";
+import portfolioImg from "../assets/Portfolio.png";
 
 export const portfolioData = {
   name: "Ruwinya Karunarathna",
@@ -127,6 +128,15 @@ export const portfolioData = {
       image: agrolink,
       liveUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
       githubUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
+    },
+    {
+      title: "Personal Portfolio Website",
+      description:
+        "A fully responsive personal portfolio website designed and developed to showcase my skills, projects, and academic journey. The platform features a modern UI with smooth navigation, project showcases, and structured sections including About Me, Skills, Certifications, and Contact.",
+      tags: ["React", "JavaScript", "HTML", "CSS"],
+      image: portfolioImg,
+      liveUrl: "https://github.com/ruwinya10/Personal-Portfolio.git",
+      githubUrl: "https://github.com/ruwinya10/Personal-Portfolio.git",
     },
     {
       title: "WellNest – Daily Habit & Mood Tracker with Hydration Reminders",

@@ -19,6 +19,10 @@ function App() {
 
   return (
     <>
+      <div className="night-sky" aria-hidden="true">
+        <div className="star-layer star-layer-distant" />
+        <div className="star-layer star-layer-bright" />
+      </div>
       <Navbar />
       <main>
         <Routes>

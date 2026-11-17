@@ -72,8 +72,8 @@
   align-items: center;
   padding-top: 72px;
   background:
-    radial-gradient(circle at top right, rgba(99, 102, 241, 0.18), transparent 35%),
-    radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.12), transparent 30%);
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.06), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.04), transparent 30%);
 }
 
 .home-grid {
@@ -144,12 +144,22 @@ main > :is(.home, .about, .contact) {
 }
 
 .avatar-ring {
+  position: relative;
   width: min(100%, 320px);
   aspect-ratio: 1;
   border-radius: 50%;
   padding: 6px;
-  background: linear-gradient(135deg, var(--accent), #312e81);
-  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, #b6c4ff, #7567ea 48%, #36256d);
+  box-shadow: var(--shadow), 0 0 48px rgba(127, 106, 255, 0.32);
+}
+
+.avatar-ring::after {
+  content: "";
+  position: absolute;
+  inset: -5%;
+  border: 1px solid rgba(178, 167, 255, 0.32);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .avatar {

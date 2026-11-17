@@ -94,12 +94,39 @@ export const portfolioData = {
 
   projects: [
     {
+      title: "ResearchMind - AI Study & Research Assistant",
+      description:
+        "A multi-agent AI assistant that helps students find academic sources and ask questions about uploaded PDFs. It searches OpenAlex and uses semantic retrieval to find relevant passages in course materials. Specialized agents summarize findings, explain concepts, and check claims against the retrieved evidence.",
+      tags: ["React", "Python", "FastAPI", "Groq", "OpenAlex", "Chroma", "Sentence Transformers", "scikit-learn", "MySQL"],
+      githubUrl: "https://github.com/ruwinya10/IT3041-IRWA-2026-Agentic-AI-Based-System",
+    },
+    {
+      title: "Hotel Booking Cancellation Prediction System",
+      description:
+        "A web app that uses a trained XGBoost model to predict whether a hotel reservation is likely to be canceled. The project compared four classification models using historical booking data before selecting XGBoost. An interactive form collects details such as lead time, deposit type, and past cancellations to support occupancy planning.",
+      tags: ["React", "FastAPI", "Python", "XGBoost", "scikit-learn", "pandas", "NumPy", "Jupyter Notebook"],
+      githubUrl: "https://github.com/ruwinya10/Hotel-Cancellation-Prediction",
+    },
+    {
+      title: "Hospital Management System",
+      description:
+        "A full-stack platform that centralizes patient records, doctor schedules, appointments, lab services, pharmacy inventory, and billing. Staff can track admissions and bed assignments, update medical records, and record payments. Role-based access and audit logs help administrators control access and track system activity.",
+      tags: ["React", "Vite", "Java", "Spring Boot", "Spring Data JPA", "Spring Security", "MySQL", "Docker", "GitHub Actions"],
+      githubUrl: "https://github.com/ruwinya10/Hospital-Management-System",
+    },
+    {
+      title: "TaskFlow - Task Management Application",
+      description:
+        "A full-stack Kanban app for assigning tasks and moving them between To Do, Doing, and Done with drag-and-drop. Users can claim unassigned tasks, while administrators can reassign work across users. The app automatically saves status changes to MongoDB so the board stays up to date after a refresh.",
+      tags: ["React", "React Router", "Axios", "Node.js", "Express.js", "MongoDB Atlas", "JWT", "Postman"],
+      githubUrl: "https://github.com/ruwinya10/TaskFlow-Task-Management-System",
+    },
+    {
       title: "Data Warehouse & Business Intelligence System",
       description:
         "An end-to-end business intelligence solution designed around a real-world coffee orders dataset. It features structured data warehouse design, automated ETL pipelines, and multidimensional OLAP cubes. Interactive dashboards provide stakeholders with actionable insights into sales trends, customer behavior, and regional product performance.",
       tags: ["SQL Server", "SSIS", "SSAS", "SQL", "Excel", "Power BI"],
       image: coffeeBiDashboard,
-      liveUrl: "https://github.com/ruwinya10/Data-Warehousing-and-Business-Intelligence-Project.git",
       githubUrl: "https://github.com/ruwinya10/Data-Warehousing-and-Business-Intelligence-Project.git",
     },
     {
@@ -108,7 +135,6 @@ export const portfolioData = {
         "A comprehensive statistical study evaluating how service response times influence customer satisfaction in hospitality settings. The analysis applies regression modeling, hypothesis testing, and ANOVA to identify key performance drivers, highlighting the relationship between service timeliness, environmental factors, and customer confidence.",
       tags: ["R", "Statistical Modelling", "Data Visualization", "Predictive Analytics"],
       image: responseTimeAnalysis,
-      liveUrl: "https://github.com/ruwinya10/Statistical-Modelling-Data-Analysis-Project.git",
       githubUrl: "https://github.com/ruwinya10/Statistical-Modelling-Data-Analysis-Project.git",
     },
     {
@@ -117,7 +143,6 @@ export const portfolioData = {
         "A unified platform designed to streamline daily university campus operations. It features conflict-free booking for facilities and assets, automated incident ticketing, real-time user notifications, and secure QR code-based check-ins governed by granular role-based access controls.",
       tags: ["Spring Boot", "MySQL", "Spring Security", "JWT", "OAuth 2.0", "React", "Bootstrap", "REST APIs"],
       image: smartCampusHub,
-      liveUrl: "https://github.com/PamodPannigala/-it3030-paf-2026-smart-campus-group_WE_DS_Y3.S1_2.1.git",
       githubUrl: "https://github.com/PamodPannigala/-it3030-paf-2026-smart-campus-group_WE_DS_Y3.S1_2.1.git",
     },
     {
@@ -126,7 +151,6 @@ export const portfolioData = {
         "A collaborative platform connecting farmers, buyers, agronomists, and logistics drivers in a single trading ecosystem. The system handles agricultural product trading, order tracking, harvest scheduling, delivery & financial tracking, and includes comprehensive administrative monitoring dashboards.",
       tags: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
       image: agrolink,
-      liveUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
       githubUrl: "https://github.com/Mafath/AgroLink-online_v2.git",
     },
     {
@@ -135,7 +159,6 @@ export const portfolioData = {
         "A fully responsive personal portfolio website designed and developed to showcase my skills, projects, and academic journey. The platform features a modern UI with smooth navigation, project showcases, and structured sections including About Me, Skills, Certifications, and Contact.",
       tags: ["React", "JavaScript", "HTML", "CSS"],
       image: portfolioImg,
-      liveUrl: "https://github.com/ruwinya10/Personal-Portfolio.git",
       githubUrl: "https://github.com/ruwinya10/Personal-Portfolio.git",
     },
     {
@@ -145,7 +168,6 @@ export const portfolioData = {
       tags: ["Kotlin", "Android Studio", "SharedPreferences"],
       image: wellnest,
       objectFit: "cover",
-      liveUrl: "https://github.com/ruwinya10/Wellness-Tracker-Android-Mobile-Application.git",
       githubUrl: "https://github.com/ruwinya10/Wellness-Tracker-Android-Mobile-Application.git",
     },
     {
@@ -154,7 +176,6 @@ export const portfolioData = {
         "A comprehensive digital healthcare platform designed to streamline patient-doctor interactions. It supports online doctor searches, appointment scheduling, lab test bookings, medical report management, and role-based administration portals alongside secure simulated payment processing.",
       tags: ["HTML", "CSS", "JavaScript", "Java", "MySQL Workbench"],
       image: halomed,
-      liveUrl: "https://github.com/ruwinya10/Online-E-Channeling-System.git",
       githubUrl: "https://github.com/ruwinya10/Online-E-Channeling-System.git",
     },
     {
@@ -163,7 +184,6 @@ export const portfolioData = {
         "A full-featured e-commerce platform offering a seamless online shopping experience. Key capabilities include interactive product browsing, shopping cart workflows, secure checkout, and comprehensive management dashboards for handling inventory, suppliers, and user roles.",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       image: trendify,
-      liveUrl: "https://github.com/ruwinya10/Online-Fashion-Store-Web-Application.git",
       githubUrl: "https://github.com/ruwinya10/Online-Fashion-Store-Web-Application.git",
     },
   ],

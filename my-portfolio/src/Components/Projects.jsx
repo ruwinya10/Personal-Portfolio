@@ -35,10 +35,11 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="project-links">
-                <a href={project.liveUrl}>Live Demo</a>
-                <a href={project.githubUrl}>GitHub</a>
-              </div>
+              {project.githubUrl && (
+                <div className="project-links">
+                  <a href={project.githubUrl}>GitHub</a>
+                </div>
+              )}
             </article>
           ))}
         </div>

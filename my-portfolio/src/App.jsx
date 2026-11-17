@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { useLayoutEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -10,6 +11,12 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+
   return (
     <>
       <Navbar />

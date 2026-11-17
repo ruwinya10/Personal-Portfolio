@@ -10,6 +10,17 @@ import HMS from "../assets/HMS.png";
 import researchmind from "../assets/researchmind.png";
 import prediction from "../assets/prediction.png";
 import taskflow from "../assets/taskflow.png";
+import MongoDB_Administrator from "../assets/MongoDB_Administrator.png";
+import AWS_Basics from "../assets/AWS_Basics.png";
+import Cloud_Computing_Essentials from "../assets/Cloud_Computing_Essentials.png";
+import Computing_solutions from "../assets/Computing_solutions.png";
+import MongoDB_modelling from "../assets/MongoDB_modelling.png";
+import MongoDB_python from "../assets/MongoDB_python.png";
+import Networking_Concepts from "../assets/Networking_Concepts.png";
+import Python_for_beginners from "../assets/Python_for_beginners.png";
+import Python_Programming from "../assets/Python_Programming.png";
+import Stage1 from "../assets/Stage1.png";
+import Stage2 from "../assets/Stage2.png";
 
 export const portfolioData = {
   name: "Ruwinya Karunarathna",
@@ -228,22 +239,78 @@ export const portfolioData = {
 
   certifications: [
     {
-      title: "Introduction to Web Development",
-      issuer: "Online Learning Platform",
-      date: "2024",
-      credentialUrl: "#",
+      title: "AI/ML Engineer - Stage 1",
+      credentialUrl: "https://code.sliit.org/certificates/koedm2thm2",
+      issuer: "Sri Lanka Institute of Information Technology (SLIIT)",
+      image: Stage1,
+      description: "Completed an introductory course in Artificial Intelligence and Machine Learning, covering fundamental concepts, essential prerequisites, and commonly used tools in the field. Gained hands-on exposure through guided projects in computer vision and natural language processing, along with practical experience using modern ML frameworks.",
     },
     {
-      title: "JavaScript Essentials",
-      issuer: "Online Learning Platform",
-      date: "2024",
-      credentialUrl: "#",
+      title: "AI/ML Engineer - Stage 2",
+      credentialUrl: "https://code.sliit.org/certificates/2nvconfidq",
+      issuer: "Sri Lanka Institute of Information Technology (SLIIT)",
+      image: Stage2,
+      description: "Completed a foundational course in supervised machine learning covering key algorithms including regression and classification techniques such as linear and logistic regression, decision trees, random forest, Naïve Bayes, and support vector machines.",
     },
     {
-      title: "Responsive Web Design",
-      issuer: "Online Learning Platform",
-      date: "2025",
-      credentialUrl: "#",
+      title: "Python for Beginners",
+      credentialUrl: "https://open.uom.lk/verify",
+      issuer: "University of Moratuwa",
+      image: Python_for_beginners,
+      description: "Completed a beginner-level Python programming course covering fundamental programming concepts including variables, control structures, functions, loops, and basic data handling. Gained practical experience in writing simple Python programs and developing problem-solving skills using computational thinking.",
+    },
+    {
+      title: "Python Programming",
+      credentialUrl: "https://open.uom.lk/verify",
+      issuer: "University of Moratuwa",
+      image: Python_Programming,
+      description: "Completed training in Python programming, covering data structures, OOP concepts, database connectivity, data visualization, networking with Python, web scraping, API integration, JSON/XML processing, introductory Machine Learning, and Git-based version control with practical programming assessments.",
+    },
+    {
+      title: "AWS SimuLearn Computing Solutions",
+      issuer: "Amazon Web Services (AWS)",
+      image: Computing_solutions,
+      description: "Gained hands-on experience with AWS cloud computing solutions, including Amazon EC2, Amazon S3, Amazon EFS, and Auto Scaling. Developed practical skills in configuring cloud resources, managing storage, deploying compute instances, and implementing scalable and highly available cloud infrastructure.",
+    },
+    {
+      title: "AWS SimuLearn Cloud Computing Essentials",
+      issuer: "Amazon Web Services (AWS)",
+      image: Cloud_Computing_Essentials,
+      description: "Developed a strong foundation in cloud computing concepts, AWS global infrastructure, and core cloud services. Gained knowledge of cloud service models, deployment strategies, security best practices, the AWS Shared Responsibility Model, and fundamental principles of scalability, availability, and cost optimization.",
+    },
+    {
+      title: "AWS SimuLearn Networking Concepts",
+      issuer: "Amazon Web Services (AWS)",
+      image: Networking_Concepts,
+      description: "Gained practical knowledge of AWS networking concepts, including Amazon VPC, public and private subnets, route tables, Internet Gateways, and security groups. Developed skills in configuring secure cloud networks, managing network connectivity, and understanding network isolation and access control within AWS environments.",
+    },
+    {
+      title: "Crash Course: AWS Basics",
+      credentialUrl: "https://learn.kodekloud.com/certificate/a0ee5391-1389-4818-9976-f18bb6f99f42",
+      issuer: "KOdeKloud",
+      image: AWS_Basics,
+      description: "Gained hands-on experience with core AWS cloud services, including Amazon S3, EC2, and VPC. Learned cloud fundamentals, secure storage, virtual server deployment, networking concepts, IAM best practices, and AWS Free Tier resource management through practical labs.",
+    },
+    {
+      title: "MongoDB Atlas Administrator Path",
+      credentialUrl: "https://learn.mongodb.com/c/C18oeAiIQXiJf584wRSdHw",
+      issuer: "MongoDB University",
+      image: MongoDB_Administrator,
+      description: "Gained hands-on experience in managing MongoDB Atlas clusters, including deployment, configuration, monitoring, backup, and security management. Learned best practices for database administration, performance optimization, and access control in cloud-based NoSQL environments.",
+    },
+    {
+      title: "MongoDB Data Modeling Path",
+      credentialUrl: "https://learn.mongodb.com/c/QURg8VJkT-GvqpMKAWCo8Q",
+      issuer: "MongoDB University",
+      image: MongoDB_modelling,
+      description: "Learned MongoDB data modeling principles, including schema design, embedding vs referencing, and building scalable and efficient NoSQL database structures.",
+    },
+    {
+      title: "MongoDB Python Developer Path",
+      credentialUrl: "https://learn.mongodb.com/c/MxwCdpZAQKuBNhIkmuvd9w",
+      issuer: "MongoDB University",
+      image: MongoDB_python,
+      description: "Developed core Python programming skills including OOP, data structures, and problem-solving, with experience in building applications and automating tasks.",
     },
   ],
 

@@ -1,5 +1,6 @@
 import { portfolioData } from "../data/portfolioData";
 import projectLogo from "../assets/logo.png";
+import { GitHubIcon } from "./SocialIcons";
 
 export default function Projects() {
   return (
@@ -37,7 +38,10 @@ export default function Projects() {
 
               {project.githubUrl && (
                 <div className="project-links">
-                  <a href={project.githubUrl}>GitHub</a>
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <GitHubIcon size={16} />
+                    GitHub
+                  </a>
                 </div>
               )}
             </article>

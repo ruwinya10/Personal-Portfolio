@@ -355,6 +355,9 @@
 }
 
 .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-weight: 600;
   font-size: 0.9rem;
 }

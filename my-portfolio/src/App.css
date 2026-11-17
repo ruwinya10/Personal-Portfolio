@@ -571,11 +571,22 @@ main > :is(.home, .about, .contact) {
 /* Responsive */
 @media (max-width: 960px) {
   .home-grid,
-  .about-grid,
   .skills-grid,
   .projects-grid,
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "header"
+      "text"
+      "highlights";
+  }
+
+  .about-highlights {
+    padding-top: 1.5rem;
   }
 
   .home-visual {

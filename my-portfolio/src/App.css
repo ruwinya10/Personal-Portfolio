@@ -337,6 +337,10 @@ main > :is(.home, .about, .contact) {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.projects .project-image {
+  opacity: 1;
+}
+
 .project-image-fallback {
   object-fit: contain;
   padding: 1.5rem;

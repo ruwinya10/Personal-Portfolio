@@ -7,7 +7,7 @@ export default function Certifications() {
       <div className="container">
         <div className="section-header">
           <p className="eyebrow">Certifications</p>
-          <h2>Learning & Credentials</h2>
+          <h2>Learning & Achievements</h2>
         </div>
 
         <div className="projects-grid">

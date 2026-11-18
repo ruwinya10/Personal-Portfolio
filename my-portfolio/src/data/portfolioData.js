@@ -29,11 +29,11 @@ export const portfolioData = {
   email: "ruwinyakarunarathna10@gmail.com",
   location: "Colombo, Sri Lanka",
   linkedin: "https://linkedin.com/in/ruwinya-karunarathna",
-  github: "https://github.com/ruwinya-karunarathna",
+  github: "https://github.com/ruwinya10",
 
   about: {
     intro:
-      "Currently I'm a 3rd-year undergraduate at Sri Lanka Institute of Technology (SLIIT), pursuing a BSc (Hons) in Information Technology specializing in Data Science.",
+      "Currently I'm a 4th-year undergraduate at Sri Lanka Institute of Technology (SLIIT), pursuing a BSc (Hons) in Information Technology specializing in Data Science.",
     paragraphs: [
       "I am a highly motivated and disciplined learner with a strong passion for Data Science, Machine Learning, Artificial Intelligence, and Software Engineering.",
       "Alongside my studies, I have worked on several academic and personal projects that have helped me strengthen my technical skills and apply theoretical knowledge in practical scenarios. I am particularly interested in how intelligent systems and data-driven approaches can be applied to solve real-world problems and improve decision-making.",
@@ -216,7 +216,7 @@ export const portfolioData = {
         "A mobile wellness application designed to help users establish and maintain healthy daily routines. It features intuitive habit tracking, mood journaling with emoji input, personalized hydration reminders, and home-screen widgets for quick access and tracking.",
       tags: ["Kotlin", "Android Studio", "SharedPreferences", "XML"],
       image: wellnest,
-      objectFit: "cover",
+      objectFit: "contain",
       githubUrl: "https://github.com/ruwinya10/Wellness-Tracker-Android-Mobile-Application.git",
     },
     {
